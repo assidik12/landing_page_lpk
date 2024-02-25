@@ -7,6 +7,9 @@ module.exports = {
         xl: "1320px",
         sm: "450px",
       },
+      fontFamily: {
+    "roboto": ['Roboto Slab', 'serif']
+      }
     },
   },
   plugins: [],
