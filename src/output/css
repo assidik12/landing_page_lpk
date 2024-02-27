@@ -1274,10 +1274,6 @@ body {
     height: 410px;
   }
 
-  .lg\:h-\[45px\] {
-    height: 45px;
-  }
-
   .lg\:h-\[52px\] {
     height: 52px;
   }

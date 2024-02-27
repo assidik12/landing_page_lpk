@@ -26,8 +26,8 @@
   </head>
   <body>
     <!-- navbar start -->
-    <div class="container-nav">
-      <div class="wrapper bg-blue-950 flex items-center h-[41px] lg:h-[52px]">
+    <nav class="container-nav">
+      <div class="wrapper-nav bg-blue-950 flex items-center inset-0 h-[41px] lg:h-[52px]">
         <div class="flex justify-end items-center relative box-border w-[100vw]">
           <div class="items flex items-center px-4 relative">
             <button id="humberger" name="humberger" type="button" class="lg:hidden mr-5">
@@ -36,39 +36,41 @@
               <span class="humberger-line bg-slate-100 transition duration-500 ease-in-out origin-top-left"></span>
             </button>
 
-            <ul class="nav-list hidden text-lg bg-slate-200 text-black absolute top-full px-20 right-2 rounded-lg shadow-slate-700 shadow-lg lg:text-white lg:static lg:flex lg:bg-transparent lg:shadow-none lg:text-lg list-none z-50">
+            <ul
+              class="nav-list hidden font-semibold text-lg bg-opacity-85 bg-slate-200 text-black absolute top-full px-20 right-2 rounded-lg shadow-slate-700 lg:font-normal shadow-lg lg:text-white lg:static lg:flex lg:bg-transparent lg:shadow-none lg:text-lg list-none z-50"
+            >
               <li class="p-2">
-                <a href="" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Home</a>
+                <a href="index.html" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Home</a>
               </li>
               <li class="p-2">
                 <a href="" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Tentang Kami</a>
               </li>
               <li class="p-2">
-                <a href="" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Bidang Pekerjaan</a>
+                <a href="#job" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Bidang Pekerjaan</a>
               </li>
               <li class="p-2">
-                <a href="" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Kontak</a>
+                <a href="#" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Kontak</a>
               </li>
               <li class="p-2">
-                <a href="" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Daftar</a>
+                <a href="#daftar" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Daftar</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
     <!-- navbar end -->
 
-    <main>
+    <main class="h-90vh">
       <!-- hero start -->
-      <div class="hero h-[90vh] mb-20">
+      <div class="hero mb-[40px]">
         <div class="line ml-6 mt-5 w-1/2 h-[2px] bg-black"></div>
         <h1 class="mt-3 text-center text-red-600 font-semibold">ようこそへ</h1>
-        <h1 class="text-center font-roboto font-semibold">LPK ANTASENA PEMALANG</h1>
+        <h1 class="text-center font-roboto font-bold lg:text-2xl">LPK ANTASENA PEMALANG</h1>
         <div class="container-hero flex justify-center">
           <div class="font-semibold flex flex-col lg:flex-row lg:items-center lg:font-extrabold lg:text-2xl">
-            <img src="image/logo_preview_rev_1.png" alt="antasena.jpg" class="object-cover mr-auto" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" />
-            <div class="text-hero ml-6 mr-6 font-roboto" data-aos="fade-right" data-aos-offset="100" data-aos-delay="600" data-aos-easing="ease-out" data-aos-duration="1000">
+            <img src="image/logo.svg" alt="antasena.jpg" class="w-full h-[280px] lg:h-[410px] object-fill mr-auto" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" />
+            <div class="text-hero ml-6 mr-6 font-roboto" data-aos="fade-right" data-aos-delay="600" data-aos-easing="ease-out" data-aos-duration="1000" data-aos-offset="100">
               <h1>BELAJAR <span class="text-red-500">BAHASA JEPANG</span></h1>
               <h1>BERSAMA LEMBAGA RESMI</h1>
               <h1>WUJUDKAN <span class="text-red-500">IMPIANMU</span> UNTUK BEKERJA DI <span class="text-red-500">JEPANG</span> SEGERA</h1>
@@ -79,13 +81,191 @@
       </div>
       <!-- hero end -->
 
-      <div class="container-contact h-[60px] lg:h-[100px] mb-28 relative">
-        <p class="text-blue-600 absolute">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus modi necessitatibus distinctio? Maiores iusto cum laborum voluptates consectetur minus eum.</p>
-        <div class="wrapper-contact text-2xl h-[60px] lg:h-[100px]"></div>
+      <!-- contact start -->
+      <div class="container-contact relative mt-10 mb-10 border border-opacity-20 border-black shadow-black h-[60px] shadow-sm rounded-lg lg:h-[80px] lg:mx-0 lg:rounded-none" id="contact">
+        <div class="w-full font-roboto lg:mx-auto">
+          <ul class="flex flex-wrap justify-center">
+            <li class="flex items-center h-[60px] lg:h-[80px]">
+              <svg class="w-[40px] h-[60px] lg:h-[80px] lg:w-[60px]" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
+                    fill="#f6044c"
+                  ></path>
+                </g>
+              </svg>
+              <!-- svg content end -->
+              <div class="ml-4 font-roboto text-slate-900 h-[60px] mt-2 lg:h-[80px]">
+                <h4 class="text-red-500 tracking-[1px] font-semibold text-sm">Hubungi :</h4>
+                <h4 class="text-slate-100 text-[12px]">Admin</h4>
+                <h5 class="text-[12px] text-slate-100 font-semibold tracking-[1px]">088220180300</h5>
+              </div>
+              <div class="line h-[40px] w-[2px] bg-slate-300 mx-5 my-auto"></div>
+            </li>
+            <li class="hidden lg:flex lg:items-center h-[80px]">
+              <svg class="h-[80px] w-[60px]" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
+                    fill="#f6044c"
+                  ></path>
+                </g>
+              </svg>
+              <!-- svg content end -->
+              <div class="ml-4 font-roboto text-slate-900 h-[80px] mt-2">
+                <h4 class="text-red-500 tracking-[1px] font-semibold text-sm">Hubungi :</h4>
+                <h4 class="text-slate-100 text-[12px]">Lukman Hakim</h4>
+                <h5 class="text-[12px] text-slate-100 font-semibold tracking-[1px]">0895405541313</h5>
+              </div>
+              <div class="line h-[60px] w-[2px] bg-slate-300 mx-5 my-auto"></div>
+            </li>
+            <li class="hidden lg:flex lg:items-center h-[80px]">
+              <svg class="w-[60px] h-[80px]" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z"
+                    fill="#f6044c"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
+                    fill="#f6044c"
+                  ></path>
+                </g>
+              </svg>
+              <!-- svg content end -->
+              <div class="ml-4 font-roboto text-slate-900 h-[80px] mt-2">
+                <h4 class="text-red-500 tracking-[1px] font-semibold">Hubungi :</h4>
+                <h4 class="text-slate-100 text-[12px]">Adi Setiawan</h4>
+                <h5 class="text-[12px] text-slate-100 tracking-[1px]">085328298458</h5>
+              </div>
+              <div class="line h-[60px] w-[2px] bg-slate-300 mx-5 my-auto"></div>
+            </li>
+            <li class="hidden lg:flex items-center">
+              <svg class="h-[80px] lg:w-[60px]" fill="#1ef41a" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#1ef41a">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M22,3V21a1,1,0,0,1-1,1H15.8V14.255h2.6l.39-3.018H15.8V9.309c0-.874.242-1.469,1.5-1.469h1.6V5.14a21.311,21.311,0,0,0-2.329-.119A3.636,3.636,0,0,0,12.683,9.01v2.227H10.076v3.018h2.607V22H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H21A1,1,0,0,1,22,3Z"
+                  ></path>
+                </g>
+              </svg>
+              <div class="flex items-center ml-4 font-sans text-slate-100">
+                <h4 class="text-red-600 font-bold font-2xl tracking-[1px]">LPK ANTASENA <span class="text-white">PEMALANG</span></h4>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- contact-end -->
+
+      <!-- jumbotron-start -->
+      <div class="container-jumbotron bg-slate-200 shadow-slate-400 shadow-inner lg:mt-[80px] h-full w-full pb-10">
+        <div class="wrapper-jumbotron flex flex-wrap">
+          <div class="w-1/2">
+            <div class="ml-6 lg:ml-10">
+              <div class="text-4xl tracking-[2px] font-semibold mx-4 my-5 lg:font-bold">.......</div>
+              <h2 class="mx-4 font-roboto text-sm font-semibold lg:text-4xl">LPK ANTASENA</h2>
+              <h2 class="mx-4 font-serif text-slate-400 text-sm lg:text-2xl">PROGRAM PELATIHAN</h2>
+            </div>
+
+            <div class="shigoto mt-5 h-[250px] w-[250px] flex flex-wrap justify-center gap-2 ml-8 lg:ml-20 lg:mt-20 lg:h-[400px] lg:w-[450px]">
+              <img src="image/job/nougyo.jpg" alt="nougyo.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]" />
+              <img src="image/job/pengolahan makanan.jpg" alt="pengolahan makanan.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]" />
+              <img src="image/job/peternakan.jpg" alt="peternakan.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] mb-5" />
+            </div>
+          </div>
+
+          <aside class="right-section w-1/2 my-10">
+            <div class="w-[100%] mx-auto">
+              <div class="w-[120px] h-[120px] rounded-[100%] border border-black overflow-hidden lg:w-[250px] lg:h-[250px] flex items-center ml-auto mr-auto">
+                <img src="image/pengurus/sandi.svg" alt="sandi.image" class="mt-5">
+              </div>
+              <h2 class="font-serif text-sm mt-5 text-center lg:text-2xl font-semibold">SANDI BIMANTORO</h2>
+              <h2 class="font-roboto text-sm font-semibold text-center text-slate-40 tracking-[1px] text-slate-600">085786875551</h2>
+              <h2 class="font-roboto text-sm text-center lg:text-xl text-slate-400">Pemilik</h2>
+
+              <div class="line mr-auto w-1/4 h-[2px] my-4 bg-black lg:h-1"></div>
+              <p class="mr-5 font-sans text-base text-slate-600 lg:mr-8 lg:text-xl">kami bergerak di bidang pelatihan bahasa jepang dan menyalurkannya untuk magang maupun TG di jepang</p>
+              <div class="line2 ml-auto w-1/4 h-[2px] my-4 mr-2 bg-black lg:h-1"></div>
+
+              <button type="button" class="next-button h-[35px] lg:h-[45px] bg-red-600 px-5 rounded-2xl border border-red-700 shadow-md shadow-slate-600 hover:bg-red-700 active:bg-red-500 lg:mt-10">
+                <a href="#" class="text-slate-100 lg:text-xl">Baca selengkapnya</a>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <!-- jumbotron-end -->
+
+      <!-- list job start -->
+      <div class="container-job pb-6 my-[50px] bg-slate-200 shadow-black shadow-md border border-black border-opacity-30 lg:mt-20" id="job">
+        <div class="wrapper-job flex h-full items-center lg:flex-wrap">
+          <div class="left-section ml-4 font-roboto">
+            <h2 class="text-sm font-semibold lg:text-2xl">Lembaga Pekatihan Kerja</h2>
+            <h3 class="text-center mt-2 text-lg text-slate-600 font-semibold">ANTASENA</h3>
+          </div>
+          <div class="line h-[300px] w-[3px] my-2 mx-5 bg-slate-800 lg:h-[400px]"></div>
+          <div class="list-job mx-6">
+            <h2 class="text-sm font-bold uppercase text-slate-500 my-5 lg:text-xl">Bidang pekerjaan :</h2>
+            <ol class="list-decimal text-sm font-semibold lg:text-lg">
+              <li>Industri pengelasan</li>
+              <li>Pertanian</li>
+              <li>Peternakan</li>
+              <li>Pengolahan makanan</li>
+              <li>Kontruksi</li>
+              <li>Konveksi</li>
+              <li>Permesinan</li>
+              <li>Perhotelan</li>
+              <li>Perawatan lansia</li>
+              <li>Budidaya kelautan</li>
+            </ol>
+          </div>
+
+          <div class="hidden lg:flex shigoto mt-5 h-[250px] w-[250px] flex-wrap justify-center gap-2 ml-8 lg:ml-20 lg:mt-20 lg:h-[400px] lg:w-[450px] lg:gap-5">
+            <img src="image/job/perawat.jpg" alt="nougyo.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]" />
+            <img src="image/job/permesinan.jpg" alt="pengolahan makanan.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px]" />
+            <img src="image/job/kensetsu.jpg" alt="peternakan.jpg" class="w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] pb-5" />
+          </div>
+        </div>
+      </div>
+      <!-- list job end -->
     </main>
 
     <script src="src/script.js"></script>
+    <!-- aos animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
