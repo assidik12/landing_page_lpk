@@ -22,11 +22,6 @@ body {
   background-color: #FCFCFC;
 }
 
-.nav-list li a {
-  font-family: "poppin", sans;
-  font-size: 1em;
-}
-
 .navbar-fixed {
   @apply fixed z-[9999] bg-opacity-70;
   backdrop-filter: blur(5px);

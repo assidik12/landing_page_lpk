@@ -31,16 +31,16 @@
     <!-- navbar start -->
     <nav class="container-nav">
       <div class="wrapper-nav bg-blue-950 flex items-center inset-0 h-[41px] lg:h-[52px]">
-        <div class="flex justify-end items-center relative box-border w-[100vw]">
-          <div class="items flex items-center px-4 relative">
+        <div class="flex justify-between items-center relative box-border w-[100vw]">
+          <div class="items flex justify-between items-center px-4 w-full relative">
+            <h5 class="text-white font-roboto ml-6">日本語の教室</h5>
             <button id="humberger" name="humberger" type="button" class="lg:hidden mr-5">
               <span class="humberger-line bg-slate-100 transition duration-300 ease-in-out origin-top-left"></span>
               <span class="humberger-line bg-slate-100 transition duration-300 ease-in-out"></span>
               <span class="humberger-line bg-slate-100 transition duration-500 ease-in-out origin-top-left"></span>
             </button>
-
             <ul
-              class="nav-list hidden text-lg bg-opacity-85 bg-slate-200 text-black absolute top-full px-20 right-2 rounded-lg shadow-slate-700 lg:font-normal shadow-sm lg:text-white lg:static lg:flex lg:bg-transparent lg:shadow-none lg:text-lg list-none z-50"
+              class="nav-list hidden text-lg font-roboto bg-opacity-85 bg-slate-200 text-black absolute top-full px-20 right-2 rounded-lg shadow-slate-700 lg:font-normal shadow-sm lg:text-white lg:static lg:flex lg:bg-transparent lg:shadow-none lg:text-lg list-none z-50"
             >
               <li class="p-2">
                 <a href="index.html" class="hover:text-blue-600 lg:hover:text-sky-300 transition duration-500 ease-in-out">Home</a>
@@ -213,18 +213,18 @@
 
           <aside class="right-section w-1/2 my-10">
             <div class="w-[100%] mx-auto">
-              <div class="w-[120px] h-[120px] rounded-[100%] border border-black overflow-hidden lg:w-[250px] lg:h-[250px] flex items-center ml-auto mr-auto">
+              <div class="w-[120px] h-[120px] rounded-[100%] overflow-hidden lg:w-[250px] lg:h-[250px] flex items-center ml-auto mr-auto">
                 <img src="image/pengurus/sandi.svg" alt="sandi.image" class="mt-5" />
               </div>
               <h2 class="font-serif text-sm mt-5 text-center lg:text-2xl font-semibold">SANDI BIMANTORO</h2>
               <h2 class="font-roboto text-sm font-semibold text-center text-slate-40 tracking-[1px] text-slate-600">085786875551</h2>
               <h2 class="font-roboto text-sm text-center lg:text-xl text-slate-400">Pemilik</h2>
 
-              <div class="line mr-auto w-1/4 h-[2px] my-4 bg-black lg:h-1"></div>
+              <div class="line mr-auto w-1/4 h-[2px] my-4 ml-4 bg-black lg:h-1"></div>
               <p class="mr-5 font-sans text-base text-slate-600 lg:mr-8 lg:text-xl">kami bergerak di bidang pelatihan bahasa jepang dan menyalurkannya untuk magang maupun TG di jepang</p>
-              <div class="line2 ml-auto w-1/4 h-[2px] my-4 mr-2 bg-black lg:h-1"></div>
+              <div class="line2 ml-auto w-1/4 h-[2px] my-4 mr-4 bg-black lg:h-1"></div>
 
-              <button type="button" class="next-button h-[35px] lg:h-[45px] bg-red-600 px-5 rounded-2xl border border-red-700 shadow-md shadow-slate-600 hover:bg-red-700 active:bg-red-500 lg:mt-10">
+              <button type="button" class="next-button h-[35px] lg:h-[45px] bg-red-600 px-5 rounded-2xl border border-red-700 shadow-md shadow-slate-600 transition ease-in-out duration-300 hover:bg-red-700 active:bg-red-500 lg:mt-10">
                 <a href="about.html" class="text-slate-100 lg:text-xl">Baca selengkapnya</a>
               </button>
             </div>
@@ -240,11 +240,13 @@
             <h2 class="text-sm font-semibold lg:text-2xl">Lembaga Pekatihan Kerja</h2>
             <h3 class="text-center mt-2 text-lg text-slate-600 font-semibold">ANTASENA</h3>
           </div>
-          <div class="line h-[300px] w-[3px] my-2 mx-5 bg-slate-800 lg:h-[400px]"></div>
+          <div class="flex items-center h-full">
+            <div class="line h-[200px] w-[3px] mx-5 bg-slate-800 lg:h-[400px]"></div>
+          </div>
           <div class="list-job mx-6">
             <h2 class="text-sm font-bold uppercase text-slate-500 my-5 lg:text-xl">Bidang pekerjaan :</h2>
             <ol class="list-decimal text-sm font-semibold lg:text-lg">
-              <li>Industri pengelasan</li>
+              <li>Industri</li>
               <li>Pertanian</li>
               <li>Peternakan</li>
               <li>Pengolahan makanan</li>
@@ -254,6 +256,7 @@
               <li>Perhotelan</li>
               <li>Perawatan lansia</li>
               <li>Budidaya kelautan</li>
+              <li>Industri pengelasan</li>
             </ol>
           </div>
 
@@ -266,251 +269,249 @@
       </div>
       <!-- list job end -->
 
-    <!-- keahlian -->
-    <section id="detail-bidang" class="bg-slate-100 pb-16 pt-36">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">detail bidang yang bisa anda pilih</h2>
-            <p class="text-md md:text-lgs font-medium text-secondary">dibawah ini beberapa perbidangan yang bisa anda pilih :</p>
-          </div>
-        </div>
-        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.wv8HDQG3LYvegRjo3isQKAHaE9?w=226&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="">PERTANIAN</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">PEKERJAAN PERTANIAN BAIK PERKEBUNAN ATAU PERSAWAHAN DIKERJAKAN DENGAN TERAMPIL DAN CEKATAN SESUAI DENGAN SOP YANG DITETAPKAN</p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
+      <!-- keahlian -->
+      <section id="detail-bidang" class="bg-slate-100 pb-16 pt-36">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-16 max-w-xl text-center">
+              <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">Detail Bidang Yang Bisa Anda Pilih</h2>
+              <p class="text-md md:text-lgs font-medium text-secondary">dibawah ini beberapa bidang yang bisa anda pilih:</p>
             </div>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.uP748UXpHZKp_m6ETxPQswHaEU?w=318&h=185&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">INDUSTRI PENGELASAN</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">DIBEKALI KEMAMPUAN TEKNIK PENGELASAN LOGAM/METAL SEPERTI BESI, BAJA, STAINLESS STEEL, ALUMINUM, TEMBAGA, KUNINGAN, NIKEL, TITANIUM, DAN SEBAGAINYA.</p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.EHkgmg_J6jSKNvNSAmrkPwHaEK?w=271&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PETERNAKAN</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">USAHA MERAWAT DENGAN BAIK SEGALA JENIS HEWAN TERNAK DENGAN DI DUKUNG PERALATAN DAN PENGETAHUAN TEKNOLOGI TINGGI UNTUK MENGHASILKAN KUALITAS TERNAK YANG BAIK</p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.Q-pGerwLk9MhOJmitHyflgHaDt?w=347&h=175&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PENGOLAHAN MAKANAN </a></h3>
-              <p class="text-base font-medium text-secondary mb-2">PROSES PENGOLAHAN BERBAGAI JENIS MAKANAN SESUAI STANDARISASI KESEHATAN DAN KEBUTUHAN SELERA MASYARAKAT.</p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.pCRFcTtCcZRq7QhzrKMLAAHaE5?w=269&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERMESINAN</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">
-                MERUPAKAN PROSES PEMBUATAN, MERAKIT, MEMASANGKAN, MENGGABUNGKAN BAGIAN – BAGIAN DARI BERBAGAI MESIN OTOMOTIF ATAU MESIN INDUSTRI SECARA TEPAT DAN PRESISI SESUAI SOP YANG TELAH DITENTUKAN.
-              </p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.f6NS6YMyTsoKvJi6ZQGeywAAAA?w=237&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">KONTRUKSI</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">KEGIATAN YANG MELIPUTI PEMBANGUNAN, PENGOPERASIAN, PEMELIHARAAN, PEMBONGKARAN, DAN PEMBANGUNAN KEMBALI SUATU BANGUNAN TERATASI DENGAN BAIK</p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.BW-uYmQhOWlEBLuY3lj0FgAAAA?w=284&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">KONVEKSI</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">
-                PROSES PEMBUATAN PAKAIAN JADI ATAU PROSES PEMBUATAN BAGIAN INTERIOR KENDARAAN BERMOTOR. PERIKANAAN PENANGKAPAN IKAN DI LAUT TERMASUK PENGOLAHAN HASIL LAUT LAINNYA SEPERTI MENYIMPAN, MENDINGINKAN, PENGERINGAN DAN PENGAWETAN
-                DENGAN TUJUAN UNTUK MENCIPTAKAN NILAI TAMBAH EKONOMI BAGI PELAKU USAHA
-              </p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.WrzsrpUVydMXCEm3FW18swAAAA?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERAWAT LANSIA</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">
-                PERAWAT YANG MELAYANI DAN MERAWAT PASIEN DI RUMAH SAKIT. SERTA MERAWAT DAN MELAYANI LANSIA DI PANTI JOMPO YANG BERTUJUAN UNTUK MENINGKATKAN KUALITAS KEHIDUPAN DAN KENYAMANAN PARA LANSIA.
-              </p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.Ft0qZYJDX0MOqq8Ux72a-wHaFS?w=232&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERHOTELAN</a></h3>
-              <p class="text-base font-medium text-secondary mb-2">
-                KAMI JUGA MEMBERIKAN PENDIDIKAN DAN PELATIHAN MEMPERSIAPKAN SDM HANDAL PROFESIONAL DALAM BIDANG PERHOTELAN SEPERTI RESEPSIONIS, PORTER, CONCIERGE, HOUSEKEEPING, ROOM SERVICE, WAITER/WAITRESS, STAFF DAPUR, DAN SUPERVISOR OF
-                GUEST SERVICES
-              </p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="https://th.bing.com/th/id/OIP.bnPtOJSmanCiKfu2e1QUQgHaE8?w=301&h=193&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
-              <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">BUDIDAYA LAUT </a></h3>
-              <p class="text-base font-medium text-secondary mb-2">
-                BUDI DAYA PERAIRAN MERUPAKAN BENTUK PEMELIHARAAN DAN PENANGKARAN BERBAGAI MACAM HEWAN ATAU TUMBUHAN PERAIRAN YANG MENGGUNAKAN AIR SEBAGAI KOMPONEN POKOKNYA. KEGIATAN-KEGIATAN YANG UMUM TERMASUK DI DALAMNYA ADALAH BUDI DAYA
-                IKAN, BUDI DAYA UDANG, BUDI DAYA TIRAM, BUDI DAYA RUMPUT LAUT
-              </p>
-              <a href="#" class="w-full bg-white p-3 text-center font-medium text-dark hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">daftar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- keahlian end -->
-    <!-- about -->
-    <section id="info" class="bg-slate-100 pb-16 pt-14">
-      <div class="container">
-        <div class="w-full">
-          <div class="mx-auto mb-12 max-w-xl text-center">
-            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">contact</h2>
-            <p class="text-md md:text-lgs font-medium text-secondary">dibawah ini beberapa keahlian yang bisa anda pilih :</p>
-          </div>
-        </div>
-        <div id="maps" class="w-full px-4 flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.180014374553!2d109.3955845093377!3d-6.869021093100958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fdbb37f98b2bf%3A0x863ffc19b27e60cf!2sLPK%20antasena%20pemalang!5e0!3m2!1sid!2sid!4v1708873234541!5m2!1sid!2sid"
-            width="600"
-            height="450"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="w-full flex justify-center mt-5">
-          <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" target="_blank" class="w-1/2 bg-white rounded-md p-3 text-center font-medium text-dark hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white"
-            >daftar disini</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- about end -->
-    <!-- testimoni -->
-    <section id="testimoni" class="bg-slate-100 pb-16 pt-14">
-      <div class="container">
-        <div class="w-full">
-          <div class="mx-auto mb-12 max-w-xl text-center">
-            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">testimoni</h2>
-            <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-          </div>
-        </div>
-        <div class="w-full px-4 flex flex-wrap justify-center">
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/591bfbcc-7e8e-480a-b8b9-58f24680ac11.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+          <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.wv8HDQG3LYvegRjo3isQKAHaE9?w=226&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="">PERTANIAN</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">PEKERJAAN PERTANIAN BAIK PERKEBUNAN ATAU PERSAWAHAN DIKERJAKAN DENGAN TERAMPIL DAN CEKATAN SESUAI DENGAN SOP YANG DITETAPKAN</p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/115b83b7-b3a2-44fb-aa89-1152b69e1a36.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.uP748UXpHZKp_m6ETxPQswHaEU?w=318&h=185&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">INDUSTRI PENGELASAN</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">DIBEKALI KEMAMPUAN TEKNIK PENGELASAN LOGAM/METAL SEPERTI BESI, BAJA, STAINLESS STEEL, ALUMINUM, TEMBAGA, KUNINGAN, NIKEL, TITANIUM, DAN SEBAGAINYA.</p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium rounded-lg text-white hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/b32c51e4-3a0c-417f-952d-c24befe34b8b.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.EHkgmg_J6jSKNvNSAmrkPwHaEK?w=271&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PETERNAKAN</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">USAHA MERAWAT DENGAN BAIK SEGALA JENIS HEWAN TERNAK DENGAN DI DUKUNG PERALATAN DAN PENGETAHUAN TEKNOLOGI TINGGI UNTUK MENGHASILKAN KUALITAS TERNAK YANG BAIK</p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/b6c90a25-c234-4ee1-a34f-1f5514661740.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.Q-pGerwLk9MhOJmitHyflgHaDt?w=347&h=175&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PENGOLAHAN MAKANAN </a></h3>
+                <p class="text-base font-medium text-secondary mb-2">PROSES PENGOLAHAN BERBAGAI JENIS MAKANAN SESUAI STANDARISASI KESEHATAN DAN KEBUTUHAN SELERA MASYARAKAT.</p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/f035bb86-01ee-4d9b-a162-c7a5c65e7bf3.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.pCRFcTtCcZRq7QhzrKMLAAHaE5?w=269&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERMESINAN</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">
+                  MERUPAKAN PROSES PEMBUATAN, MERAKIT, MEMASANGKAN, MENGGABUNGKAN BAGIAN – BAGIAN DARI BERBAGAI MESIN OTOMOTIF ATAU MESIN INDUSTRI SECARA TEPAT DAN PRESISI SESUAI SOP YANG TELAH DITENTUKAN.
+                </p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
-          </div>
-          <div class="mb-12 p-4 md:w-1/4">
-            <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
-              <img src="image/testimoni/76b892c9-da74-4031-9c33-c0bc5969cac8.jpg" width="200" height="200" alt="" />
-              <div>
-                <h4>dokumentasi kamu</h4>
-                <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
-                <div class="flex flex-row justify-center">
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                  <i data-feather="star" class="fill-yellow-600"> </i>
-                </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.f6NS6YMyTsoKvJi6ZQGeywAAAA?w=237&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">KONTRUKSI</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">KEGIATAN YANG MELIPUTI PEMBANGUNAN, PENGOPERASIAN, PEMELIHARAAN, PEMBONGKARAN, DAN PEMBANGUNAN KEMBALI SUATU BANGUNAN TERATASI DENGAN BAIK</p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.BW-uYmQhOWlEBLuY3lj0FgAAAA?w=284&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">KONVEKSI</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">
+                  PROSES PEMBUATAN PAKAIAN JADI ATAU PROSES PEMBUATAN BAGIAN INTERIOR KENDARAAN BERMOTOR. PERIKANAAN PENANGKAPAN IKAN DI LAUT TERMASUK PENGOLAHAN HASIL LAUT LAINNYA SEPERTI MENYIMPAN, MENDINGINKAN, PENGERINGAN DAN PENGAWETAN
+                  DENGAN TUJUAN UNTUK MENCIPTAKAN NILAI TAMBAH EKONOMI BAGI PELAKU USAHA
+                </p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.WrzsrpUVydMXCEm3FW18swAAAA?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERAWAT LANSIA</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">
+                  PERAWAT YANG MELAYANI DAN MERAWAT PASIEN DI RUMAH SAKIT. SERTA MERAWAT DAN MELAYANI LANSIA DI PANTI JOMPO YANG BERTUJUAN UNTUK MENINGKATKAN KUALITAS KEHIDUPAN DAN KENYAMANAN PARA LANSIA.
+                </p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.Ft0qZYJDX0MOqq8Ux72a-wHaFS?w=232&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">PERHOTELAN</a></h3>
+                <p class="text-base font-medium text-secondary mb-2">
+                  KAMI JUGA MEMBERIKAN PENDIDIKAN DAN PELATIHAN MEMPERSIAPKAN SDM HANDAL PROFESIONAL DALAM BIDANG PERHOTELAN SEPERTI RESEPSIONIS, PORTER, CONCIERGE, HOUSEKEEPING, ROOM SERVICE, WAITER/WAITRESS, STAFF DAPUR, DAN SUPERVISOR OF
+                  GUEST SERVICES
+                </p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="https://th.bing.com/th/id/OIP.bnPtOJSmanCiKfu2e1QUQgHaE8?w=301&h=193&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" />
+                <h3 class="mb-3 mt-5 text-xl font-semibold text-dark hover:cursor-pointer"><a href="#">BUDIDAYA LAUT </a></h3>
+                <p class="text-base font-medium text-secondary mb-2">
+                  BUDI DAYA PERAIRAN MERUPAKAN BENTUK PEMELIHARAAN DAN PENANGKARAN BERBAGAI MACAM HEWAN ATAU TUMBUHAN PERAIRAN YANG MENGGUNAKAN AIR SEBAGAI KOMPONEN POKOKNYA. KEGIATAN-KEGIATAN YANG UMUM TERMASUK DI DALAMNYA ADALAH BUDI DAYA
+                  IKAN, BUDI DAYA UDANG, BUDI DAYA TIRAM, BUDI DAYA RUMPUT LAUT
+                </p>
+                <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" class="w-full bg-red-600 p-3 text-center font-medium text-white rounded-lg hover:cursor-pointer hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950" target="_blank">Daftar</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- testimoni end -->
-
+      </section>
+      <!-- keahlian end -->
+      <!-- about -->
+      <section id="info" class="bg-slate-100 pb-16 pt-14">
+        <div class="container">
+          <div class="w-full">
+            <div class="mx-auto mb-12 max-w-xl text-center">
+              <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">Lokasi</h2>
+              <p class="text-md md:text-lgs font-medium text-secondary">dibawah ini merupakan lokasi kami</p>
+            </div>
+          </div>
+          <div id="maps" class="w-full px-4 flex justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.180014374553!2d109.3955845093377!3d-6.869021093100958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fdbb37f98b2bf%3A0x863ffc19b27e60cf!2sLPK%20antasena%20pemalang!5e0!3m2!1sid!2sid!4v1708873234541!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="w-full flex justify-center mt-5">
+            <a href="https://forms.gle/pzNeg5qKhd1ToyTL8" target="_blank" class="w-1/2 bg-red-600 rounded-lg p-3 text-center font-medium  hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 text-white">Daftar disini</a>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- testimoni -->
+      <section id="testimoni" class="bg-slate-100 pb-16 pt-14">
+        <div class="container">
+          <div class="w-full">
+            <div class="mx-auto mb-12 max-w-xl text-center">
+              <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">Testimoni</h2>
+              <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+            </div>
+          </div>
+          <div class="w-full px-4 flex flex-wrap justify-center">
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/591bfbcc-7e8e-480a-b8b9-58f24680ac11.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/115b83b7-b3a2-44fb-aa89-1152b69e1a36.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lg font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/b32c51e4-3a0c-417f-952d-c24befe34b8b.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/b6c90a25-c234-4ee1-a34f-1f5514661740.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/f035bb86-01ee-4d9b-a162-c7a5c65e7bf3.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-12 p-4 md:w-1/4">
+              <div class="overflow-hidden rounded-md shadow-md shadow-slate-950 flex flex-col items-center justify-center p-3 text-center">
+                <img src="image/testimoni/76b892c9-da74-4031-9c33-c0bc5969cac8.jpg" width="200" height="200" alt="" />
+                <div>
+                  <h4 class="font-roboto text-sm font-semibold my-4">Dokumentasi siswa</h4>
+                  <p class="text-md md:text-lgs font-medium text-secondary">dokumentasi alumni yang sudah bekerja di jepang</p>
+                  <div class="flex flex-row justify-center my-4">
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                    <i data-feather="star" class="fill-yellow-600"> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimoni end -->
+    </main>
     <!-- footer -->
-    <footer class="py-8 text-center bg-slate-100">
+    <footer class="py-8 text-center bg-slate-200">
       <div class="w-full p-4 mt-3">
         <div class="flex items-center justify-center">
           <a
@@ -535,7 +536,7 @@
             </svg>
           </a>
 
-          <a href="https://wa.me/+625786875551" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">
+          <a href="https://wa.me/+6285786875551" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:bg-gradient-to-r hover:from-red-600 hover:to-blue-950 hover:text-white">
             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>WhatsApp</title>
               <path
